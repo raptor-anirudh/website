@@ -1,0 +1,57 @@
+.background-image {
+    background-image: url('about\ bg.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    padding: 30px;
+    border: 2px double black;
+    filter: blur(8px);
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 2;
+}
+
+#genre {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: right;
+    z-index: 2;
+}
+
+#rate {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    z-index: 2;
+}
+
+input[type=submit] {
+    background-color: #ced8d4;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+input[type=submit]:hover {
+    background-color: #0f9618;
+}
