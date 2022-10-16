@@ -1,0 +1,23 @@
+.firstbar {
+    font-family: serif;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    position: relative;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+#address {
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+#footimage {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video {
+    object-fit: cover;
+}
