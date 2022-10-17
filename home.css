@@ -21,3 +21,39 @@
 .video {
     object-fit: cover;
 }
+
+.mvc {
+    color: wheat;
+    background-image: url(about\ bg.jpg);
+    border: 3px ridge white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.top1 {
+    border: 6px double darkblue;
+    border-radius: 50px;
+}
+
+.sec {
+    background-image: url(bg2);
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+.top2 {
+    border: 6px double darkblue;
+    border-radius: 50px;
+    height: 430px;
+    width: 769px;
+}
+
+.top3 {
+    border: 6px double darkblue;
+    border-radius: 50px;
+    height: 430px;
+    width: 769px;
+}
