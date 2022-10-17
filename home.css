@@ -11,7 +11,7 @@
 
 #address {
     font-size: 30px;
-    color: blanchedalmond;
+    color: rgb(209, 122, 0);
 }
 
 #footimage {
@@ -25,7 +25,9 @@
 .mvc {
     color: wheat;
     background-image: url(about\ bg.jpg);
-    border: 3px ridge white;
+    background-attachment: fixed;
+    border-top: 15px ridge rgb(128, 66, 9);
+    border-bottom: 15px ridge rgb(146, 74, 7);
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -33,8 +35,8 @@
 }
 
 .top1 {
-    border: 6px double darkblue;
-    border-radius: 50px;
+    border-bottom: 15px double rgb(15, 215, 230);
+    border-radius: 90px;
 }
 
 .sec {
@@ -45,15 +47,22 @@
 }
 
 .top2 {
-    border: 6px double darkblue;
-    border-radius: 50px;
+    border-bottom: 16px double rgb(238, 118, 6);
+    border-radius: 90px;
     height: 430px;
     width: 769px;
 }
 
 .top3 {
-    border: 6px double darkblue;
-    border-radius: 50px;
+    border-bottom: 16px double rgb(193, 193, 218);
+    border-radius: 90px;
     height: 430px;
     width: 769px;
+}
+
+.home {
+    font-size: 52px;
+    background: -webkit-linear-gradient(rgb(214, 223, 51), rgb(243, 31, 3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
