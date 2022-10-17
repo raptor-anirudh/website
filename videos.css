@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    border-left: 5px groove rgb(34, 1, 1);
+    border-right: 5px groove rgb(22, 1, 1);
+    border-top: 12px groove rgb(5, 1, 1);
+    border-bottom: 12px groove rgb(5, 1, 1);
+}
+
+.j {
+    background-image: linear-gradient(white, rgb(228, 22, 22));
+    font-size: 50px;
+}
