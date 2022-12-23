@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="cart.png" type="image.x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="thanks.html">
+    <title>ZK-Billing</title>
+    <header class="intro">
+        <center>
+            <u><h1 style="background-image:url(ky.jpg); ;font-family: fantasy;background-repeat: no-repeat;background-size: cover;padding: 30px;margin: 1px;font-size: 500%;">Z K - Checkout </h1></u><br>
+        </center>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: -moz-linear-gradient(red, orange, yellow);
+                font-size: 17px;
+                padding: 8px;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin: 0 -16px;
+            }
+            
+            .col-25 {
+                -ms-flex: 25%;
+                flex: 25%;
+            }
+            
+            .col-50 {
+                -ms-flex: 50%;
+                flex: 50%;
+            }
+            
+            .col-75 {
+                -ms-flex: 75%;
+                flex: 75%;
+            }
+            
+            .col-25,
+            .col-50,
+            .col-75 {
+                padding: 0 16px;
+            }
+            
+            .container {
+                background-color: #f2f2f2;
+                padding: 5px 20px 15px 20px;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+            }
+            
+            input[type=text] {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            
+            label {
+                margin-bottom: 10px;
+                display: block;
+            }
+            
+            .icon-container {
+                margin-bottom: 20px;
+                padding: 7px 0;
+                font-size: 24px;
+            }
+            
+            .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px;
+                margin: 10px 0;
+                border: none;
+                width: 100%;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 17px;
+            }
+            
+            .btn-hover {
+                background-color: #45a049;
+            }
+            
+            a {
+                color: #2196F3;
+            }
+            
+            hr {
+                border: 1px solid lightgray;
+            }
+            
+            span.price {
+                float: right;
+                color: grey;
+            }
+            
+            @media (max-width:800px) {
+                .row {
+                    flex-direction: column-reverse;
+                }
+                .col-25 {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <h2><img src="cart.png" width="20px" height="20px"> CHECKOUT :</h2>
+    <p>Resize the browser window to see the effect. When the screen in less than 800px wide ,make the two coloumns stack on top of each other instead of next to each other</p>
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="thanks.html">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                            <input type="text" id="fname" name="Firstname" placeholder="V ANIRUDH">
+                            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                            <input type="text" id="email" name="Email" placeholder="raptor@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                            <input type="text" id="adr" name="adr" placeholder="#67 BGS EDU CITY">
+                            <label for="city"><i class="fa fa-institution"></i>City</label>
+                            <input type="text" id="city" name="city" placeholder="Bengaluru City">
+
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="State"><i class="fa fa-street-view"></i>State</label>
+                                    <input type="text" id="State" name="State" placeholder="Bengaluru">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Pin-code</label>
+                                    <input type="text" id="zip" name="zip" placeholder="560000">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color: navy;"></i>
+                                <i class="fa fa-cc-amex" style="color: blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                                <i class="fa fa-cc-discover" style="color: orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="V ANIRUDH">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="0000-1111-2222-3333">
+                            <label for="expmonth">Expiry Date</label>
+                            <input type="text" name="expmonth" id="expmonth" placeholder="01/11">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" placeholder="000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+            <input type="checkbox" name="sameadr" id="sameadr" unchecked="unchecked">Shipping address same as billing
+        </label>
+
+                    <input type="submit" value="Place the Order" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart <span class="price" style="color: black;"><i class="fa fa-shopping-cart" ></i> <b>5</b></span></h4>
+                <hr>
+                <p><a href="product1.html">Product 1: CASIO CTK-2500...</a> <span class="price">:$150</span></p>
+                <p><a href="product2.html">Product 2: MELODICA: BLOW KEYBO... </a> <span class="price">  :$120</span></p>
+                <p><a href="product3.html">Product 3: CTK 2500 Cover...</a> <span class="price"> :$170</span></p>
+                <p><a href="product4.html">Product 4: YAMAHA F310...</a> <span class="price">:$100</span></p>
+                <p><a href="product5.html">Product 5: ROLAND CUBE 30</a> <span class="price"> :$110</span></p>
+                <hr>
+                <p>Discount:<span class="price" style="color: rgb(219, 12, 12);"><b>-$100</b></span></p>
+                <p>Promotion code:<span class="price" style="color: rgb(231, 16, 16);"><b>-$70</b></span></p>
+                <p>Tax(18%):<span class="price" style="color: rgb(233, 10, 10);"><b>$120</b></span></p>
+                <hr>
+
+                <p>SubTotal:<span class="price" style="color: rgb(233, 10, 10);" :><b><s> $1550</s></b></span></p>
+                <p>Total:<span class="price" style="color: black;"><b>$770</b></span></p>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<footer class="credit">
+    <center>
+        <p class="site-footer__fineprint" id="fineprint" style="color:rgb(15, 1, 1); font-size: small;"><b>
+            Copyright© 2022 ZionKeyboardist | All rights reserved</b></p>
+    </center>
+</footer>
+
+</html>
